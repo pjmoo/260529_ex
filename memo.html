@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메모를 남기자!</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        textarea{
+            resize: none;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #page{
+            height: 100vh;
+            flex-direction: column;
+        }
+        #memoWirter{
+            flex-direction: column;
+            padding: 8px;
+        }
+        #memoWirter button{
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+<body>
+    <section id="page" class="center">
+        <section id="container">
+            <h1>메모를 남기자!</h1>
+            <form id="memoWirter" class="center">
+                <textarea name="memo"></textarea>
+                <button>저장</button>
+            </form>
+        </section>
+    </section>
+</body>
+</html>
